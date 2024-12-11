@@ -30,7 +30,7 @@ eypz({
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        const AmeenT = '📍ping...';
+        const AmeenT = '_Checking...!_';
         
         const start = new Date().getTime(); 
         const AmeenS = await conn.sendMessage(from, { text: AmeenT }, { quoted: mek });
