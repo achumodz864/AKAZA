@@ -18,9 +18,9 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '!'
+const prefix = '.'
 
-const ownerNumber = ['918138898059', '918078438059', '916238768108'] // coma (,) ittit eniyum add akan kayyum
+const ownerNumber = ['919539412641'] // coma (,) ittit eniyum add akan kayyum
 async function loadSession() {
   if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
     if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!');
