@@ -89,7 +89,7 @@ console.log('Plugins Installed')
 console.log('Connected')
       
         let AmeenInt = '120363378523753848@g.us'
-        let Cronezz = '*BOT CONNECTED✅*\n*RUNNING ON:* RENDER'
+        let Cronezz = '*OCTA-BASE CONNECTED*\n\n_Version : 1.0.0_\n__Plugins : undefined_'
         conn.sendMessage(AmeenInt, { 
         text: Cronezz
   })
