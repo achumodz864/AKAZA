@@ -15,7 +15,7 @@
 
 2. Now Deploy
     <br>
-<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/Axl-Sparky/OCTA-BASE' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+<a href='https://dashboard.render.com/blueprint/new?repo=https://github.com/Axl-Sparky/NEXTRO-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/></a>
 
 
 ### Koyeb
@@ -25,7 +25,7 @@
 
 2. Deploy on Koyeb
    <br>
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/Axl-Sparky/OCTA-BASE&branch=main&name=octa-base&builder=dockerfile&env[SESSION_ID]=' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/Axl-Sparky/NEXTRO-MD&branch=main&name=nextro-md&builder=dockerfile&env[SESSION_ID]=' target="_blank"><img alt='Deploy' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
 #
   
