@@ -96,7 +96,7 @@ let surl  =("https://chat.whatsapp.com/EjgS7jDeksLGIbG0Cm0RtW");
 let stext = ("*NEXTRO-MD CONNECTED*\n\n_Version : 1.0.0_\n_Mode: public_\n_Plugins : undefined_");
 
 
-await conn.sendMessage(sjid, { text: stext, contextInfo: { externalAdReply: {
+conn.sendMessage(sjid, { text: stext, contextInfo: { externalAdReply: {
 
 title: "𝑵𝒆𝒙𝒕𝒓𝒐-𝑴𝒅",
                                                                   
