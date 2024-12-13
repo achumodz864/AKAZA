@@ -58,7 +58,7 @@ async function connectToWA() {
     consocheckSecretKeyle.log("[PLUGIN ERROR]");
     return;
         }*/
-console.log("Connecting to OCTA-BASE...");
+console.log("Connecting to whatsapp 🎉🎉...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
