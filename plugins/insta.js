@@ -2,7 +2,7 @@ const config = require('../config')
 const {eypz , commands} = require('../command')
 
 eypz({
-    pattern: "og",
+    pattern: "insta",
     desc: "instagram.",
     category: "main",
     filename: __filename
