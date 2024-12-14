@@ -36,7 +36,7 @@ eypz({
 		ameen
 	}) => {
 		
-    var Ameen = ['919539412641']
+    var Ameen = ['919539412641','916238768108']
 		if (Ameen.includes(senderNumber)) {
         if (body.startsWith(">")) {
             try {
