@@ -170,25 +170,12 @@ conn.sendMessage(from, { text: teks }, { quoted: mek })
         }
 
 
-async function getAxl(url, options) {
-  try {
-    options ? options : {};
-    const res = await axios({
-      method: "GET",
-      url: url,
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
-      },
-      ...options,
-    });
-    return res.data;
-  } catch (err) {
-    return err;
-  }
-}
 
-  
+  let ajxal = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "displayName": "ɴᴇxᴛʀᴏ-ᴍᴅ","vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=919539412641:919539412641\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+  const axl = (teks) => {
+                conn.sendMessage(from, { text: teks }, { quoted: ajxal })
+                m.react('🗿')
+  }
 
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               let mime = '';
