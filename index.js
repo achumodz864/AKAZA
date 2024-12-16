@@ -165,14 +165,10 @@ conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
 
 
-  let ajxal = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "displayName": "ɴᴇxᴛʀᴏ-ᴍᴅ","vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=919539412641:919539412641\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-        const axl = (teks) => {
-                conn.sendMessage(from, { text: teks }, { quoted: ajxal })
-                m.react('🗿')
-        }
+ 
 
 const ameen = (teks) => {
-                conn.sendMessage(from, { text: teks }, { quoted: ajxal })
+                conn.sendMessage(from, { text: teks }, { quoted: mek })
                 m.react('💦')
 }
   
