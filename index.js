@@ -58,7 +58,7 @@ async function connectToWA() {
     consocheckSecretKeyle.log("[PLUGIN ERROR]");
     return;
         }*/
-console.log("Connecting CRONAZ-XD...");
+console.log("Connecting NEXTRO-MD 💎...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
