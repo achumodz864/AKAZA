@@ -169,6 +169,27 @@ conn.sendMessage(from, { text: teks }, { quoted: mek })
                 m.react('🕊️')
         }
 
+
+async function getAxl(url, options) {
+  try {
+    options ? options : {};
+    const res = await axios({
+      method: "GET",
+      url: url,
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36",
+      },
+      ...options,
+    });
+    return res.data;
+  } catch (err) {
+    return err;
+  }
+}
+
+  
+
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               let mime = '';
               let res = await axios.head(url)
@@ -191,6 +212,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               }
             }
 
+  
 
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
