@@ -18,19 +18,19 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '.'
+const prefix = '!'
 
 const ownerNumber = ['919539412641'] // coma (,) ittit eniyum add akan kayyum
 async function loadSession() {
   if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
     if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!');
     const sessdata = config.SESSION_ID;
-    const Cronez = sessdata.replace('𝑵𝒆𝒙𝒕𝒓𝒐-𝑴𝒅~', '');
+    const Cronez = sessdata.replace('𝐂𝐫𝐨𝐧𝐞𝐱𝐁𝐨𝐭~', '');
     const filer = File.fromURL(`https://mega.nz/file/${Cronez}`);
     filer.download((err, data) => {
       if (err) throw err;
       fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-        console.log('*session loading.... 🗿⬇️*');
+        console.log('Checking Session.....');
       });
     });
   }
@@ -58,7 +58,7 @@ async function connectToWA() {
     consocheckSecretKeyle.log("[PLUGIN ERROR]");
     return;
         }*/
-console.log("Connecting to whatsapp 🎉🎉...");
+console.log("Connecting CRONAZ-XD...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -88,34 +88,11 @@ require("./plugins/" + plugin);
 console.log('Plugins Installed')
 console.log('Connected')
       
-        let sjid = '120363378523753848@g.us'
-
-let ajxal = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "displayName": "ɴᴇxᴛʀᴏ-ᴍᴅ","vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=919539412641:919539412641\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-   
-let surl  =("https://chat.whatsapp.com/EjgS7jDeksLGIbG0Cm0RtW");
-let stext = ("*NEXTRO-MD CONNECTED*\n\n_Version : 1.0.0_\n_Mode: public_\n_Plugins : undefined_");
-
-
-conn.sendMessage(sjid, { text: stext, contextInfo: { externalAdReply: {
-
-title: "𝑵𝒆𝒙𝒕𝒓𝒐-𝑴𝒅",
-                                                                  
-body: "_Made with ❤️_",
-
-sourceUrl: surl,
-
-mediaUrl: surl,
-
-mediaType: 1,
-
-showAdAttribution: true,
-
-renderLargerThumbnail: true,
-
-thumbnailUrl: "https://files.catbox.moe/1pd6gc.jpeg" }}}, { quoted : ajxal });
-
-  
-        
+        let AmeenInt = '120363378523753848@g.us'
+        let Cronezz = '*CONNECTED💗♾️*'
+        conn.sendMessage(AmeenInt, { 
+        text: Cronezz
+  })
   }
 })
 conn.ev.on('creds.update', saveCreds)  
@@ -163,15 +140,11 @@ const isAdmins = isGroup ? groupAdmins.includes(sender) : false
 const reply = (teks) => {
 conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
-
-
- 
-
-const ameen = (teks) => {
+        const ameen = (teks) => {
                 conn.sendMessage(from, { text: teks }, { quoted: mek })
-                m.react('💦')
-}
-  
+                m.react('🕊️')
+        }
+
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               let mime = '';
               let res = await axios.head(url)
