@@ -163,9 +163,12 @@ const isAdmins = isGroup ? groupAdmins.includes(sender) : false
 const reply = (teks) => {
 conn.sendMessage(from, { text: teks }, { quoted: mek })
 }
-        const ameen = (teks) => {
-                conn.sendMessage(from, { text: teks }, { quoted: mek })
-                m.react('🕊️')
+
+
+  let ajxal = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "displayName": "ɴᴇxᴛʀᴏ-ᴍᴅ","vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=919539412641:919539412641\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+        const axl = (teks) => {
+                conn.sendMessage(from, { text: teks }, { quoted: ajxal })
+                m.react('🗿')
         }
 
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
@@ -226,7 +229,7 @@ command.function(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGr
 })
 }
 app.get("/", (req, res) => {
-res.send("CRONAZ-XD 🧚🏻");
+res.send("NEXTRO-MD 🗿📈💗");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
