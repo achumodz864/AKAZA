@@ -171,6 +171,11 @@ conn.sendMessage(from, { text: teks }, { quoted: mek })
                 m.react('🗿')
         }
 
+const ameen = (teks) => {
+                conn.sendMessage(from, { text: teks }, { quoted: ajxal })
+                m.react('💦')
+}
+  
 conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
               let mime = '';
               let res = await axios.head(url)
