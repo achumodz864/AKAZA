@@ -18,7 +18,7 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '!'
+const prefix = '.'
 
 const ownerNumber = ['919539412641'] // coma (,) ittit eniyum add akan kayyum
 async function loadSession() {
@@ -85,14 +85,38 @@ if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('Plugins Installed')
-console.log('Connected')
-      
-        let AmeenInt = '120363378523753848@g.us'
-        let Cronezz = '*CONNECTED💗♾️*'
-        conn.sendMessage(AmeenInt, { 
-        text: Cronezz
-  })
+console.log('Plugins Installed successfully')
+console.log('Connected to whatsapp ✅️')
+     
+
+let sjid = '120363378523753848@g.us'
+
+let ajxal = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "displayName": "ɴᴇxᴛʀᴏ-ᴍᴅ","vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=919539412641:919539412641\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+   
+let surl  =("https://chat.whatsapp.com/EjgS7jDeksLGIbG0Cm0RtW");
+let stext = ("*NEXTRO-MD CONNECTED*\n\n_Version : 1.0.0_\n_Mode: public_\n_Plugins : undefined_");
+
+
+conn.sendMessage(sjid, { text: stext, contextInfo: { externalAdReply: {
+
+title: "𝑵𝒆𝒙𝒕𝒓𝒐-𝑴𝒅",
+                                                                  
+body: "_Made with ❤️_",
+
+sourceUrl: surl,
+
+mediaUrl: surl,
+
+mediaType: 1,
+
+showAdAttribution: true,
+
+renderLargerThumbnail: true,
+
+thumbnailUrl: "https://files.catbox.moe/1pd6gc.jpeg" }}}, { quoted : ajxal });
+
+  
+        
   }
 })
 conn.ev.on('creds.update', saveCreds)  
