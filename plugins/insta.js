@@ -31,7 +31,7 @@ let ing = await conn.sendMessage(from, {text:"_Downloading...!_"}, {quoted : mek
 
  await conn.sendMessage(from,{[utype]: {url: url}},{quoted: mek})
 
-return await conn.sendMessage(from, { text: "_Downloaded !_", edit: ing.key });
+ await conn.sendMessage(from, { text: "_Downloaded !_", edit: ing.key });
 
 }catch(e){
 console.log(e)
