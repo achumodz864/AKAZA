@@ -1,4 +1,4 @@
->const { commands, eypz } = require('../command');
+const { commands, eypz } = require('../command');
 
 eypz({
     pattern: "fb",
