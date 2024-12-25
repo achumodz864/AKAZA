@@ -3,7 +3,7 @@ const {eypz , commands} = require('../command')
 
 
 eypz({
-    pattern: "yplay",
+    pattern: "play",
     desc: "download songs",
     category: "download",
     filename: __filename
