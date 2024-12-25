@@ -17,7 +17,7 @@ var ing = ('_Searching...!_')
 
 const search = await conn.sendMessage(from, { text: ing }, { quoted: mek });
 
-var fek = await fetch(`https://raganork-network.vercel.app/api/xvideos/search?query=boobs`)
+var fek = await fetch(`https://raganork-network.vercel.app/api/xvideos/search?query=${q}`)
 var data = await fek.json();
         let txt = `\n*XV SEARCH RESULTS*\n\n`;
       
