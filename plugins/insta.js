@@ -28,15 +28,10 @@ let utype = await hehe[0].type
 let ing = await conn.sendMessage(from, {text:"_Downloading...!_"}, {quoted : mek });
 
 
-if( utype === "video" ) {
- await conn.sendMessage(m.chat, { video: { url: url }, mimetype: 'video/mp4' })
 
-return await conn.sendMessage(from, { text: "_Video Downloaded !_✅️", edit: ing.key });
-				}
+ await conn.sendMessage(from,{[utype]: {url: url}},{quoted: mek})
 
- await conn.sendMessage(from,{image: {url: url}},{quoted: mek})
-
-return await conn.sendMessage(from, { text: "_Image Downloaded !_✅️", edit: ing.key });
+return await conn.sendMessage(from, { text: "_Downloaded !_", edit: ing.key });
 
 }catch(e){
 console.log(e)
