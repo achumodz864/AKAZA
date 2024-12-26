@@ -25,7 +25,9 @@ let url = js.data
 
 await conn.sendMessage(from, { video: { url: url } }, { quoted: mek })
 
-       await conn.sendMessage(from, { text: txt, edit: search.key });
+      let txt = '✓'
+       
+        await conn.sendMessage(from, { text: txt, edit: search.key });
        
 
 } catch (e) {
