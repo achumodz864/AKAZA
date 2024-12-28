@@ -39,7 +39,7 @@ const msg_dl =  `_Downloading :  ${st} , *${length}*_`
 let down = await fg.yta(yturl)
 let durl = down.dl_url
 
-return durl
+
 return await conn.sendMessage(from,{audio: {url:durl},mimetype:"audio/mpeg"},{quoted:mek})
 
 
