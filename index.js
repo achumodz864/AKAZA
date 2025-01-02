@@ -125,7 +125,7 @@ conn.ev.on('creds.update', saveCreds)
 conn.ev.on('messages.upsert', async(mek) => {
             if (!(await checkSecretKey())) {
       console.log("[PLUGIN ERROR]");
-      return;
+      
             }
 mek = mek.messages[0]
 if (!mek.message) return	
